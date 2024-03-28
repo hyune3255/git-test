@@ -1,0 +1,194 @@
+/* 98CFB8 COOL MINT
+  7FB174 MAIN COLOR
+  #689C97 JUNIPER
+  #072A24 SUB COLOR 
+  #43583f 배너 박스*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    padding-right: 2rem;
+}
+.headernav{
+    padding: 20px 20px;
+    
+}
+.headernav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.headernav a:hover{
+    color: #7FB174;
+}
+.headernav a div::after{
+     content:""; display: block; border-bottom: 3px solid #7FB174;
+     transition: all 250ms ease-out; width: 0;
+     
+}
+.headernav a div:hover::after{
+    transition: all 250ms ease-out; left: 0; width: 100%;
+    
+}
+
+.rightnav{
+    display: flex;
+    padding-left: 10rem;
+
+}
+.rightnav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.rightnav a div{
+    padding: 10px 10px;
+    margin: 10px;
+}
+.signup{
+    background-color: #7FB174;
+    border-radius: 20px 30px;
+    color: white;
+    
+}
+
+/* 메인 */
+  #root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     padding-top: 2rem;
+  }
+  #card-container{
+    perspective: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    background-color: #43583f;
+    border-radius: 30px 30px;
+  }
+  .card{
+    /* overflow: hidden; */
+    /* user-select: none; */
+    transition: all 0.8s ease-in-out;
+    padding: 5px;
+  }
+
+  .card img{
+    width: 100%;
+    height: 100%;
+  }
+  .card:nth-child(1){
+    z-index: 1;
+    width: 280px;
+    height: 400px;
+    opacity: 0.4;
+  }
+  .card:nth-child(2){
+    z-index: 2;
+    width: 330px;
+    height: 450px;
+    opacity: 0.7;
+  }
+  .card:nth-child(3){
+    z-index: 3;
+    width: 550px;
+    height: 500px;
+  }
+  .card:nth-child(4){
+    z-index: 2;
+    width: 330px;
+    height: 450px;
+    opacity: 0.7;
+  }
+  .card:nth-child(5){
+    z-index: 1;
+    width: 280px;
+    height: 400px;
+    opacity: 0.4;
+  }
+  #control-btns{
+    padding-top: 40px;
+    
+  }
+  .c-btn{
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    /* background-color: black; */
+    color: #7FB174;
+    border: 2px solid #7FB174;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 20px;
+    user-select: none;
+    border-radius: 10px 20px;
+  }
+  .maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+  }
+  .mainbox-1{
+    padding: 10px;
+    padding-left: 0px;
+  }
+  h2{
+    padding-right: 50px;
+    color: #072A24;
+  }
+
+  .mainbt{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+  }
+.mainip{
+    height: 40px;
+    padding-left: 20px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.mainitem{
+  display: flex;
+
+  /* border: 1px solid red; */
+}
+.mainitem div:nth-child(1){
+  padding-left: 6rem;
+  padding-bottom: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+}
+.mainitem-1{
+  margin-left: auto;
+  padding-right: 6.5rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+.itemcontainer{
+
+
+}
+.itembox{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
